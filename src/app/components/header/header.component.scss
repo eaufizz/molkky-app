@@ -1,0 +1,41 @@
+.header-container {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+
+  .header-title-container {
+    display: flex;
+    background-color: bisque;
+
+    .title {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .sub-title {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+
+  .tabs {
+    display:flex;
+    background-color: bisque;
+
+    .tab {
+      width: 20%;
+      border: 1px solid gray;
+      text-align: center;
+      position: relative;
+    }
+
+    .option {
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      background-color: aqua;
+      z-index: 2;
+    }
+  }
+}

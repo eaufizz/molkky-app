@@ -1,0 +1,27 @@
+<div class="set-member-container">
+  <div class="description">
+    メンバー登録
+  </div>
+  <div class="contents">
+    <div *ngFor="let team of currentTeams">
+      <div class="team-name-container">
+        <span>
+          {{team.name}}
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="buttons">
+    <div
+      class="button"
+    >
+      <span>チーム編集</span>
+    </div>
+    <div
+      class="next-button button"
+      (click)="goNext()"
+    >
+      <span>次へ進む</span>
+    </div>
+  </div>
+</div>

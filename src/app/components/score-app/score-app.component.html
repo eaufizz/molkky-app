@@ -1,0 +1,31 @@
+<div class="home-container">
+  <img
+    src="assets/icon/molkky.svg"
+    class="home-icon"
+  >
+
+  <div class="buttons">
+    <div
+      class="start"
+      (click)="onClickStart()"
+      (mouseenter)="toggleStart()"
+      (mouseleave)="toggleStart()"
+    >
+    <span
+      class="arrow"
+      [ngClass]="{'hovered': isStartHovered}">▶</span>
+      はじめる
+    </div>
+    <div
+      class="settings"
+      (click)="onClickSettings()"
+      (mouseenter)="toggleSettings()"
+      (mouseleave)="toggleSettings()"
+    >
+      <span
+        class="arrow"
+        [ngClass]="{'hovered': isSettingsHovered}">▶</span>
+      設定
+    </div>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+<div class="header-container">
+  <div class="header-title-container">
+    <div class="title">Fun モルック</div>
+    <div class="sub-title">～モルック応援サイト～</div>
+  </div>
+
+  <div class="tabs">
+    <div
+      class="knowledge tab"
+      (mouseenter)="showKnowledgeTab()"
+      (mouseleave)="hideKnowledgeTab()"
+    >
+      知る
+      <div
+        class="option"
+        *ngIf="showKnowledge === true"
+      >
+        <div>モルックとは？</div>
+      </div>
+    </div>
+    <div
+      class="master tab"
+      (mouseenter)="showMasterTab()"
+      (mouseleave)="hideMasterTab()"
+    >
+      極める
+      <div
+        class="option"
+        *ngIf="showMaster === true"
+      >
+        <div>モルック検定（非公式）</div>
+      </div>
+    </div>
+    <div
+      class="diary tab"
+      (mouseenter)="showDiaryTab()"
+      (mouseleave)="hideDiaryTab()"
+    >
+      活動日記
+      <div
+        class="option"
+        *ngIf="showDiary === true"
+      >
+        <div>管理人</div>
+      </div>
+    </div>
+    <div
+      class="info tab"
+      (mouseenter)="showInfoTab()"
+      (mouseleave)="hideInfoTab()"
+    >
+      大会情報
+      <div
+        class="option"
+        *ngIf="showInfo === true"
+      >
+        <div>大会結果</div>
+        <div>開催状況</div>
+      </div>
+    </div>
+    <div
+      class="board tab"
+      (mouseenter)="showBoardTab()"
+      (mouseleave)="hideBoardTab()"
+    >
+      掲示板
+      <div
+        class="option"
+        *ngIf="showBoard === true"
+      >
+        <div>アクセスランキング</div>
+        <div>一覧</div>
+    </div>
+    </div>
+  </div>
+</div>

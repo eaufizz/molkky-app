@@ -1,0 +1,24 @@
+.home-container {
+  width: 100%;
+  height: 2000px;
+  background-color: gray;
+  display: flex;
+
+  .right-contents {
+    width: 15%;
+  }
+
+  .center-contents {
+    width: 70%;
+
+    .app {
+      position: relative;
+      font-size:100px;
+      top: 200px;
+    }
+  }
+
+  .left-contents {
+    width: 15%;
+  }
+}

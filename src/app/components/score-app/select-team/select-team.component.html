@@ -1,0 +1,25 @@
+<div class="select-team-container">
+  <div class="description">
+    チーム名を入力してね
+  </div>
+
+  <div class="forms">
+    <ng-template #container></ng-template>
+  </div>
+  <div class="buttons">
+    <div
+      class="add-button button"
+      [ngClass]="{'disabled': !showAdd}"
+      (click)="addInputForm()"
+    >
+      <span>チーム追加</span>
+    </div>
+    <div
+      class="next-button button"
+      [ngClass]="{'disabled': !showNext}"
+      (click)="goNext()"
+    >
+      <span>次へ進む</span>
+    </div>
+  </div>
+</div>
