@@ -3,7 +3,8 @@ import {
   ScoreAppService,
   Team,
   Player,
-} from '../../../../core/service/ScoreAppService';
+} from '../../../core/service/ScoreAppService';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-set-member',
@@ -16,6 +17,7 @@ export class SetMemberComponent {
 
   constructor(
     private scoreApp: ScoreAppService,
+    private router: Router,
   ) {}
 
   ngOnInit(): void {
@@ -23,6 +25,6 @@ export class SetMemberComponent {
   }
 
   goNext(): void {
-    
+    this.router.navigate(["/game"]);
   }
 }

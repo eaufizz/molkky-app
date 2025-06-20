@@ -4,6 +4,9 @@ export interface Team {
   name: string;
   member: Player[];
   number?: number;
+  score?: number;
+  totalScore?: number;
+  miss?: number;
 }
 
 export interface Player {
@@ -26,4 +29,6 @@ export class ScoreAppService {
   getSelectedTeams(): Team[] {
     return this.selectedTeams;
   }
+
+
 }

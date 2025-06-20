@@ -11,7 +11,7 @@ import {
   ScoreAppService,
   Team,
   Player,
- } from '../../../core/service/ScoreAppService';
+ } from '../../core/service/ScoreAppService';
 
 @Component({
   selector: 'app-select-team',

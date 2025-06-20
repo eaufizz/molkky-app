@@ -3,16 +3,17 @@ import {
   RouterModule,
   Routes
 } from '@angular/router';
-import { HomeComponent } from './screen/home/home.component';
-import { ScoreAppComponent } from './components/score-app/score-app.component';
-import { SelectTeamComponent } from './components/score-app/select-team/select-team.component';
-import { SetMemberComponent } from './components/score-app/select-team/set-member/set-member.component';
+import { ScoreAppComponent } from './screen/score-app/score-app.component';
+import { SelectTeamComponent } from './components/select-team/select-team.component';
+import { SetMemberComponent } from './components/select-team/set-member/set-member.component';
+import { GameComponent } from './screen/game/game.screen';
 
 const routes: Routes = [
   { path: '', component: ScoreAppComponent },
   { path: 'score', component: ScoreAppComponent },
   { path: 'select-team', component: SelectTeamComponent },
   { path: 'set-member', component: SetMemberComponent },
+  { path: 'game', component: GameComponent },
 ];
 
 @NgModule({
