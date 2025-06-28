@@ -12,6 +12,7 @@ import { SelectTeamComponent } from './components/select-team/select-team.compon
 import { FormsModule } from '@angular/forms';
 import { SetMemberComponent } from './components/select-team/set-member/set-member.component';
 import { GameComponent } from './screen/game/game.screen';
+import { SelectNumberOfTeamsComponent } from './screen/select-number-of-teams/select-number-of-teams.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { GameComponent } from './screen/game/game.screen';
     AppComponent,
     SetMemberComponent,
     GameComponent,
+    SelectNumberOfTeamsComponent,
   ],
   imports: [
     BrowserModule,

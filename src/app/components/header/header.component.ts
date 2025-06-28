@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,49 +7,16 @@ import { CommonModule } from '@angular/common';
   standalone: false,
 })
 export class HeaderComponent {
-  showKnowledge: boolean = false;
-  showMaster: boolean = false;
-  showDiary: boolean = false;
-  showInfo: boolean = false;
-  showBoard: boolean = false;
+  @Output() back = new EventEmitter();
+  @Output() home = new EventEmitter();
+  @Input() title: string = "test";
+  @Input() disabled: boolean = false;
 
-  showKnowledgeTab(): void {
-    this.showKnowledge = true;
+  onClickBack(): void {
+    this.back.emit();
   }
 
-  hideKnowledgeTab(): void {
-    this.showKnowledge = false;
-  }
-
-  showMasterTab(): void {
-    this.showMaster = true;
-  }
-
-  hideMasterTab(): void {
-    this.showMaster = false;
-  }
-
-  showDiaryTab(): void {
-    this.showDiary = true;
-  }
-
-  hideDiaryTab(): void {
-    this.showDiary = false;
-  }
-
-  showInfoTab(): void {
-    this.showInfo = true;
-  }
-
-  hideInfoTab(): void {
-    this.showInfo = false;
-  }
-
-  showBoardTab(): void {
-    this.showBoard = true;
-  }
-
-  hideBoardTab(): void {
-    this.showBoard = false;
+  onClickHome(): void {
+    this.home.emit();
   }
 }

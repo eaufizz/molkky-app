@@ -1,31 +1,25 @@
 <div class="home-container">
   <img
-    src="assets/icon/molkky.svg"
+    src="assets/images/title.svg"
     class="home-icon"
   >
 
   <div class="buttons">
     <div
-      class="start"
+      class="start button"
       (click)="onClickStart()"
       (mouseenter)="toggleStart()"
       (mouseleave)="toggleStart()"
     >
-    <span
-      class="arrow"
-      [ngClass]="{'hovered': isStartHovered}">▶</span>
-      はじめる
+    <img src="assets/images/start_game.svg" alt="">
     </div>
     <div
-      class="settings"
+      class="view button"
       (click)="onClickSettings()"
       (mouseenter)="toggleSettings()"
       (mouseleave)="toggleSettings()"
     >
-      <span
-        class="arrow"
-        [ngClass]="{'hovered': isSettingsHovered}">▶</span>
-      設定
+      <img src="assets/images/view_graph.svg" alt="">
     </div>
   </div>
 </div>

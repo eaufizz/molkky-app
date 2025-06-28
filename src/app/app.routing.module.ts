@@ -4,14 +4,14 @@ import {
   Routes
 } from '@angular/router';
 import { ScoreAppComponent } from './screen/score-app/score-app.component';
-import { SelectTeamComponent } from './components/select-team/select-team.component';
 import { SetMemberComponent } from './components/select-team/set-member/set-member.component';
 import { GameComponent } from './screen/game/game.screen';
+import { SelectNumberOfTeamsComponent } from './screen/select-number-of-teams/select-number-of-teams.component';
 
 const routes: Routes = [
   { path: '', component: ScoreAppComponent },
   { path: 'score', component: ScoreAppComponent },
-  { path: 'select-team', component: SelectTeamComponent },
+  { path: 'select-team', component: SelectNumberOfTeamsComponent },
   { path: 'set-member', component: SetMemberComponent },
   { path: 'game', component: GameComponent },
 ];
