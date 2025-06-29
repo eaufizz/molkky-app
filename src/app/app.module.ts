@@ -8,24 +8,26 @@ import { InputFormComponent } from './components/input-form/input-form.component
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { ScoreAppComponent } from './screen/score-app/score-app.component';
-import { SelectTeamComponent } from './components/select-team/select-team.component';
 import { FormsModule } from '@angular/forms';
 import { SetMemberComponent } from './screen/set-member/set-member.component';
 import { GameComponent } from './screen/game/game.screen';
 import { SelectNumberOfTeamsComponent } from './screen/select-number-of-teams/select-number-of-teams.component';
 import { TeamCardComponent } from './screen/set-member/team-card/team-card.component';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { SelectBoxComponent } from './components/select-box/select-box.component';
 
 @NgModule({
   declarations: [
     InputFormComponent,
     HeaderComponent,
     ScoreAppComponent,
-    SelectTeamComponent,
     AppComponent,
     SetMemberComponent,
     GameComponent,
     SelectNumberOfTeamsComponent,
     TeamCardComponent,
+    SelectBoxComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +36,8 @@ import { TeamCardComponent } from './screen/set-member/team-card/team-card.compo
     MatInputModule,
     RouterModule,
     FormsModule,
+    MatSelectModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

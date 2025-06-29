@@ -1,22 +1,24 @@
 <div class="card-container">
   <div class="card-header">
     <button
+      class="remove-btn"
       (click)="removeMember()"
       [disabled]="team.member.length <= 1"
-    >-</button>
-    <span>{{team.name}}</span>
+    ><span>-</span></button>
+    <span class="team-name">{{team.name}}</span>
     <button
+      class="add-btn"
       (click)="addMember()"
       [disabled]="team.member.length >= 4"
-    >+</button>
+    ><span>+</span></button>
   </div>
 
   <div class="members">
-    <ng-container *ngFor="let member of team.member">
-      <app-input-form
-        [value]="member.name"
-      >
-      </app-input-form>
+    <ng-container *ngFor="let member of team.member; let i = index">
+      <div class="member">
+        <span>{{i+1}}.</span>
+        <app-select-box></app-select-box>
+      </div>
     </ng-container>
   </div>
 </div>

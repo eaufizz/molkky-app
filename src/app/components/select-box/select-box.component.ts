@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+export interface SelectOption {
+  name: string;
+  value: string;
+}
 
 @Component({
   selector: 'app-select-box',
-  imports: [],
   templateUrl: './select-box.component.html',
-  styleUrl: './select-box.component.scss'
+  styleUrl: './select-box.component.scss',
+  standalone: false,
 })
 export class SelectBoxComponent {
+  @Input() options: SelectOption[] = [
 
+  ];
 }

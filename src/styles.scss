@@ -18,3 +18,11 @@ app-root {
 * {
   font-family: "Noto Sans JP";
 }
+
+:host ::ng-deep button:focus,
+:host ::ng-deep button:focus-visible,
+:host ::ng-deep button:active {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
