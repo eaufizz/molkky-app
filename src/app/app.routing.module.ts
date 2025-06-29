@@ -4,7 +4,7 @@ import {
   Routes
 } from '@angular/router';
 import { ScoreAppComponent } from './screen/score-app/score-app.component';
-import { SetMemberComponent } from './components/select-team/set-member/set-member.component';
+import { SetMemberComponent } from './screen/set-member/set-member.component';
 import { GameComponent } from './screen/game/game.screen';
 import { SelectNumberOfTeamsComponent } from './screen/select-number-of-teams/select-number-of-teams.component';
 

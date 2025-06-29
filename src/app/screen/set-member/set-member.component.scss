@@ -1,0 +1,23 @@
+@use "../../stylesheets/normal-color.scss" as normal;
+
+* {
+  box-sizing: border-box;
+}
+
+.page-container {
+  width: 100%;
+  height: 100%;
+  padding: 90px 24px 80px 24px;
+  background-color: normal.$bgColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+  }
+  .test {
+    font-size: 30px;
+  }
+}

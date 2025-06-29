@@ -24,6 +24,10 @@
       border-radius: 8px;
       background-color: normal.$buttonBgColor;
 
+      &:hover {
+        cursor: pointer;
+      }
+
       span {
         color: normal.$textColor;
         font-size: 26px;

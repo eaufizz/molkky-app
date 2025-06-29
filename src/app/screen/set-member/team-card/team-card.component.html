@@ -1,0 +1,22 @@
+<div class="card-container">
+  <div class="card-header">
+    <button
+      (click)="removeMember()"
+      [disabled]="team.member.length <= 1"
+    >-</button>
+    <span>{{team.name}}</span>
+    <button
+      (click)="addMember()"
+      [disabled]="team.member.length >= 4"
+    >+</button>
+  </div>
+
+  <div class="members">
+    <ng-container *ngFor="let member of team.member">
+      <app-input-form
+        [value]="member.name"
+      >
+      </app-input-form>
+    </ng-container>
+  </div>
+</div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router'
+import { ScoreAppService } from '../../core/service/ScoreAppService';
 
 @Component({
   selector: 'app-select-number-of-teams',
@@ -11,9 +12,15 @@ export class SelectNumberOfTeamsComponent {
 
   constructor(
     private router: Router,
+    private scoreAppService: ScoreAppService,
   ) {}
 
   moveToHome(): void {
     this.router.navigate(['']);
+  }
+
+  setTeamCount(value: number): void {
+    this.scoreAppService.setTeamCount(value);
+    this.router.navigate(["set-member"]);
   }
 }

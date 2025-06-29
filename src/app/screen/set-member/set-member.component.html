@@ -1,0 +1,14 @@
+<div class="page-container">
+  <app-header
+    title="チームを編集"
+    (back)="moveToBack()"
+    (home)="moveToHome()"
+  ></app-header>
+  <div class="cards">
+    <ng-container *ngFor="let team of currentTeams">
+      <app-team-card
+        [team]="team"
+      ></app-team-card>
+    </ng-container>
+  </div>
+</div>

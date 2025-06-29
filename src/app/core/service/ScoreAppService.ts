@@ -19,6 +19,7 @@ export interface Player {
 })
 export class ScoreAppService {
   private selectedTeams: Team[] = [];
+  private teamCount: number = 0;
 
   constructor() {}
 
@@ -30,5 +31,11 @@ export class ScoreAppService {
     return this.selectedTeams;
   }
 
+  setTeamCount(value: number) {
+    this.teamCount = value;
+  }
 
+  getTeamCount(): number {
+    return this.teamCount;
+  }
 }
